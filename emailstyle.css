@@ -1,0 +1,283 @@
+
+#heading{
+    font-size: calc(50px);
+    line-height: calc(20px);
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #eacece;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+  
+  @-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+}
+  
+#heading2{
+    text-align: center;
+    font-style: italic;
+    font-stretch: expanded;
+    font-size: x-large;
+}
+#para1{
+    font-size: x-large;
+    font-weight: 500;
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap;  
+    white-space: -pre-wrap;      
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;  
+    font-style: italic;
+    text-align: center;
+    color: rgb(41, 41, 41);
+    
+}
+#heading3{
+    text-align: center;
+    font-weight: 200;
+    color: rgb(52, 52, 52);
+}
+
+    .glow-on-hover {
+        width: 150px;
+        height: 50px;
+        border:none;;
+        color: #ffffff;
+        background: #000000;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10%;
+        font-style:oblique;
+        font-weight: 700;
+        display:inline;
+        justify-content: space-between;
+    }
+    
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10%;
+    }
+    
+    .glow-on-hover:active {
+        color: #000
+    }
+    
+    .glow-on-hover:active:after {
+        background: transparent;
+    }
+    
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+    
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #191919;
+        left: 0;
+        top: 0;
+        border-radius: 10%;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+#para{
+    font-size: x-large;
+    font-weight: 500;
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap;  
+    white-space: -pre-wrap;      
+    white-space: -o-pre-wrap;    
+    word-wrap: break-word;  
+    font-style: italic;
+    color: #2d2d2d;
+}
+body{
+  background-color:#cbcbcb;
+    width: 250mm; /* Set the width to A4 paper size in mm */ /* Set the height to A4 paper size in mm */
+    margin: 0 auto; /* Center the content */
+    box-shadow: none; /* Remove any box shadow */
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-position: center;
+    
+}
+#topic{
+    line-height: calc(1px);
+    text-shadow: 0 0 5px #ff1616, 0 0 15px #7c0202, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #ffffff, 0 0 98px #ffffff;
+    color: #ffffff;
+    font-family: "Sacramento", cursive;
+    text-align: left;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+@-webkit-keyframes blink {
+        20%,
+        24%,
+        55% {
+          color: #111;
+          text-shadow: none;
+        }
+      
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+      /*     color: #fccaff;
+          text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+            0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #ffffff, 0 0 98px #ffffff;
+          color: #ffffff;
+        }
+      }
+      
+      @keyframes blink {
+        20%,
+        24%,
+        55% {
+          color: #111;
+          text-shadow: none;
+        }
+      
+        0%,
+        19%,
+        21%,
+        23%,
+        25%,
+        54%,
+        56%,
+        100% {
+        text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #ffffff, 0 0 98px #ffffff;
+          color: #ffffff;
+        }
+      }
+}
+#sub{
+  line-height: calc(1px);
+  text-shadow: 0 0 5px #dcff16, 0 0 15px #3f7c02, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #ffffff, 0 0 98px #ffffff;
+  color: #ffffff;
+  font-family: "Sacramento", cursive;
+  text-align: left;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+@-webkit-keyframes blink {
+      20%,
+      24%,
+      55% {
+        color: #111;
+        text-shadow: none;
+      }
+    
+      0%,
+      19%,
+      21%,
+      23%,
+      25%,
+      54%,
+      56%,
+      100% {
+    /*     color: #fccaff;
+        text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+          0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+      text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #ffffff, 0 0 98px #ffffff;
+        color: #ffffff;
+      }
+    }
+    
+    @keyframes blink {
+      20%,
+      24%,
+      55% {
+        color: #111;
+        text-shadow: none;
+      }
+    
+      0%,
+      19%,
+      21%,
+      23%,
+      25%,
+      54%,
+      56%,
+      100% {
+      text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 60px #ffffff, 0 0 10px #ffffff, 0 0 98px #ffffff;
+        color: #ffffff;
+      }
+    }
+}
+#joinreq{
+  text-align: center;
+}
+#fee{
+  font-stretch:ultra-expanded;
+  text-align: center;
+  color: #3f7c02;
+}
