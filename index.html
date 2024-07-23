@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="emailstyle.css">
+</head>
+<style>
+    /* Styles for the printable text area */
+    @media print {
+        .print-text-area {
+            width: 180mm; /* Set the width of the printable text area */
+            margin: 0 auto; /* Center the text area within the page */
+            border: none; /* Remove border for printing */
+            padding: 20mm; /* Add padding to the text area */
+        }
+    }
+    /* Styles for screen view */
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .no-print {
+        display: block;
+    }
+    .print-text-area {
+        width: 100%; /* Full width on screen */
+        margin: 0 auto; /* Center the content on screen */
+        padding: 10px;
+        border: 1px solid #000; /* Optional: add a border for screen view */
+    }
+</style>
+<body>
+    <h1 id="heading" id="bh1">
+        Business Growth Hub
+    </h1>
+    <h2 id="heading2">
+        Empowering Your Business to Thrive
+    </h2>
+    <pre id="para"># At Business Growth Hub, we believe every business has the potential to grow and succeed. Whether you're a startup aiming to establish a foothold or an established company looking to scale new heights, we are here to support you every step of the way.
+    <h3 id="topic">1.Our Mission</h3>To provide innovative solutions, expert guidance, and the tools you need to unlock your business’s full potential. Our goal is to help you navigate challenges, seize opportunities, and achieve sustainable growth.
+    <h3 id="topic">2.What We Offer</h3>
+<h4 id="sub">1) Consulting Services:</h4> Personalized strategies tailored to your business’s unique needs. From market analysis to operational optimization, we have you covered.
+   <h4 id="sub">2) Digital Marketing Expertise:</h4>Boost your online presence with our cutting-edge digital marketing solutions. We help you reach and engage your target audience effectively.
+   <h4 id="sub">3) Funding Assistance:</h4> Our team assists you in preparing compelling business plans and pitches to attract the right investors.
+   <h4 id="sub">4) Mentorship and Networking:</h4>Join our vibrant community of business leaders, mentors, and peers. Share experiences, gain insights, and build valuable relationships that propel your business forward.
+   <h3 id="topic">3.Why Choose Us?</h3><h4 id="sub">1) Expert Team:</h4>Our consultants and mentors are seasoned professionals with a track record of success across various industries.
+   <h4 id="sub">2) Customized Approach:</h4>We understand that every business is unique. Our solutions are tailored to meet your specific goals and challenges.
+   <h4 id="sub">3) Proven Results:</h4>Our strategies are backed by data and proven to drive tangible growth for businesses like yours.
+   <h3 id="topic">4.Get Started Today!</h3>Ready to take your business to the next level? Contact us today to schedule a free consultation. Let’s work together to turn your vision into reality.
+   <h3 id="joinreq">[Contact Us] | [Join Our Community]</h3>
+    </pre>
+    <h3 id="topic">
+        5.If you have a business:
+    </h3>
+    <pre id="para1">
+      # 1st of all after accepting your email we start study on your business to know about it and the location your business is in. After studding your business we'll assign a staff of our to help you up. This whole procedure will be online. And according to the work load we'll charge you. This whole process can take up to 2 or 3 months. You can share any kind of problem with our staff he or she will surely try to fix that up.
+    </pre>
+    <h3 id="topic">
+        6.If you want to start a business:
+    </h3>
+    <pre id="para1">
+        # After accepting the request and checking your requirements we'll assign you a guider to help you start a small business. After the business started we'll try to grow your business.this process can take upto 5 or 6 months. You can share any kind of problem with our staff he or she will surely try to fix that up.
+    </pre>
+    <h3 id="fee">
+        [Minimum fee = 2999inr] / [Maximum fee = 8999inr]
+    </h3>
+    <button class="glow-on-hover" onclick="openGmail()">GROW</button>
+    <button class="glow-on-hover" onclick="openGmail2()">START</button>
+    <script>
+        function openGmail() {
+            var email = 'tanu20052007@gmail.com';
+            var subject = 'Need help to grow my bussiness';
+            var body = 'enter your name =                       ,enter your business type=                 , enter your personal phone number =               , enter your full business address = ';
+            var mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.open(mailtoLink, '_blank');
+        }
+        function openGmail2() {
+            var email = 'tanu20052007@gmail.com';
+            var subject = 'Need help to start my bussiness';
+            var body = 'enter your name =                       ,enter your business type=                 , enter your personal phone number =               ';
+            var mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.open(mailtoLink, '_blank');
+        }
+    </script>
+</body>
+</html>
